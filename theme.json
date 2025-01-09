@@ -1,0 +1,208 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "palette": [
+                {
+                    "color": "#000",
+                    "name": "Black",
+                    "slug": "custom-black"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "White",
+                    "slug": "custom-white"
+                },
+                {
+                    "color": "#c9c8c8",
+                    "name": "Gray",
+                    "slug": "custom-gray"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1230px",
+            "wideSize": "1230px"
+        },
+        "spacing": {
+            "units": [
+                "%",
+                "px",
+                "em",
+                "rem",
+                "vh",
+                "vw"
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+                    "name": "System Font",
+                    "slug": "system-font"
+                },
+                {
+                    "name": "Roboto",
+                    "slug": "roboto",
+                    "fontFamily": "Roboto, sans-serif",
+                    "fontFace": [
+                        {
+                            "src": [
+                                "file:./assets/fonts/roboto/roboto-400-normal.woff2"
+                            ],
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/roboto/roboto-500-normal.woff2"
+                            ],
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/roboto/roboto-700-normal.woff2"
+                            ],
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/roboto/roboto-900-normal.woff2"
+                            ],
+                            "fontWeight": "900",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/roboto/roboto-300-normal.woff2"
+                            ],
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontFamily": "Roboto"
+                        }
+                    ]
+                }
+            ]
+        },
+        "useRootPaddingAwareAlignments": true
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--white)",
+            "text": "var(--wp--preset--color--custom-black)"
+        },
+        "elements": {
+            "button": {
+                "color": {
+                    "background": "var(--wp--preset--color--custom-black)",
+                    "text": "var(--wp--preset--color--white)"
+                },
+                "border": {
+                    "radius": "50px"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "0.9rem"
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(3.05rem, 3.54vi + 2.17rem, 5rem)",
+                    "lineHeight": "1.4"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem)",
+                    "lineHeight": "1.4"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem)",
+                    "lineHeight": "1.4",
+                    "fontStyle": "normal",
+                    "fontWeight": "300"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(1.56rem, 1vi + 1.31rem, 2.11rem)",
+                    "lineHeight": "1.4"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem)",
+                    "lineHeight": "1.4",
+                    "fontStyle": "normal",
+                    "fontWeight": "300"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "fontSize": "clamp(1rem, 0.34vi + 0.91rem, 1.19rem)",
+                    "lineHeight": "1.4"
+                }
+            },
+            "heading": {
+                "color": {
+                    "background": "var(--wp--preset--color--white)",
+                    "text": "var(--wp--preset--color--custom-black)"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)"
+                }
+            },
+            "link": {
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--custom-black)"
+                    }
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--custom-black)"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--roboto)",
+                    "textDecoration": "underline"
+                }
+            }
+        },
+        "blocks": {
+            "core/button": {
+                "color": {
+                    "background": "var(--wp--preset--color--custom-black)",
+                    "text": "var(--wp--preset--color--custom-white)"
+                },
+                "border": {
+                    "radius": "50px"
+                }
+            }
+        }
+    },
+    "templateParts": [
+        {
+            "area": "header",
+            "name": "header"
+        },
+        {
+            "area": "footer",
+            "name": "footer"
+        }
+    ]
+}

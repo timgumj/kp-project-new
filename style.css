@@ -1,0 +1,171 @@
+/*
+Theme Name: KP Project
+Theme URI: 
+Author: Julius
+Author URI: 
+Description: For Florian
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 5.7
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kp-project
+Tags: 
+*/
+
+/*
+Theme Name: KP Project
+Theme URI: 
+Author: Julius
+Description: For Florian
+Version: 1.0
+*/
+
+/* Default button styles */
+.wp-block-button__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.wp-block-button__link:hover {
+  transform: scale(1.05);
+}
+
+/* Fill button styles */
+.wp-block-button.is-style-fill .wp-block-button__link {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1.5px solid #000000;
+}
+
+.wp-block-button.is-style-fill .wp-block-button__link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Outline button styles */
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background-color: transparent;
+  color: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Ripple animation */
+.wp-block-button__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+}
+
+.wp-block-button__link:hover::before {
+  width: 300%;
+  height: 300%;
+  opacity: 0;
+}
+
+/* Menu styles */
+.wp-block-navigation {
+  position: relative;
+  z-index: 9999;
+}
+
+.wp-block-navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+.wp-block-navigation .wp-block-navigation__submenu-container {
+  position: absolute;
+  z-index: 99999;
+  background-color: white;
+}
+
+.wp-block-navigation a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.wp-block-navigation .current-menu-item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+.wp-block-navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+/* Padding adjustments for .hero-section-content */
+@media (max-width: 1024px) {
+  .hero-section-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Padding adjustments for .menu-section */
+@media (max-width: 1024px) {
+  .menu-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Hero Section Content adjustments for mobile */
+@media (max-width: 768px) {
+  .hero-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
